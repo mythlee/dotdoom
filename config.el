@@ -85,3 +85,19 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+;;
+
+;; youdao
+;;
+
+(require 'youdao-dictionary)
+(global-set-key "\C-xy" 'youdao-dictionary-search-at-point+)
+
+;; pyim config
+;;
+;;
+;;(add-load-path! "~/.doom.d")
+
+(load! "./config-pyim")
+
+(server-start)

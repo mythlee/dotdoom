@@ -14,6 +14,14 @@
 (package! cmake-mode)
 (package! vterm)
 (package! key-chord)
+(package! julia-mode)
+(package! pyim)
+(package! pyim-basedict)
+(package! posframe)
+(package! youdao-dictionary)
+(package! zotxt)
+(package! auctex)
+(package! reftex)
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
