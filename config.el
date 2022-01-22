@@ -40,6 +40,11 @@
 ;;and while we're at it bind jk to the indispensable insert-normal mode (ctrl-o)
 (key-chord-define evil-insert-state-map "jk" 'evil-execute-in-normal-state)
 
+;; custom keymap
+;;
+
+(define-key evil-normal-state-map "Q" 'fill-paragraph)
+
 (defun my-c-mode-common-hook ()
   ;; set my personal style for the current buffer
   (c-set-style "stroustrup")
