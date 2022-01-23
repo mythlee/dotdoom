@@ -105,4 +105,6 @@
 
 (load! "./config-pyim")
 
+(load! "./config-tex")
+
 (server-start)
