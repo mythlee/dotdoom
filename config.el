@@ -107,7 +107,9 @@
 
 (load! "./config-tex")
 
+(load! "./config-org")
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
+(display-time)
 (server-start)
