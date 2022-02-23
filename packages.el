@@ -24,6 +24,8 @@
 (package! reftex)
 (package! exec-path-from-shell)
 (package! ox-reveal)
+(package! ox-pandoc)
+(package! cnfonts)
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
