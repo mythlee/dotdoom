@@ -92,6 +92,8 @@
 ;; they are implemented.
 ;;
 
+;;(add-load-path! "../emacs-reveal")
+
 ;; youdao
 ;;
 
@@ -108,6 +110,9 @@
 (load! "./config-tex")
 
 (load! "./config-org")
+
+;;(load! "./config-reveal")
+
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 

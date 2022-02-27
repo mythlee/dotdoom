@@ -23,9 +23,14 @@
 (package! auctex)
 (package! reftex)
 (package! exec-path-from-shell)
-(package! ox-reveal)
+;;(package! ox-reveal)
 (package! ox-pandoc)
 (package! cnfonts)
+(package! org-ref)
+(package! org-re-reveal)
+(package! org-re-reveal-citeproc)
+(package! org-re-reveal-ref)
+(package! oer-reveal)
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
