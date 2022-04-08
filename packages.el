@@ -31,7 +31,7 @@
 (package! org-re-reveal-citeproc)
 (package! org-re-reveal-ref)
 (package! oer-reveal)
-
+(package! exec-path-from-shell)
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
 
