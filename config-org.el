@@ -73,3 +73,5 @@ unwanted space when exporting org-mode to html."
                           "\\1" orig-contents))
     (ad-set-arg 1 fixed-contents)
     ))
+(setq org-latex-pdf-process
+      '("xelatex -shell-escape -interaction nonstopmode --output-directory %o %f"))
