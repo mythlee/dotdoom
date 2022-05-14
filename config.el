@@ -30,6 +30,8 @@
 (add-to-list 'term-file-aliases
     '("tmux-256color" ."xterm-direct"))
 
+
+
 (xterm-mouse-mode 1)
 
 ;; change esc to jj in evil mode
@@ -101,5 +103,9 @@
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
+(pushnew! initial-frame-alist '(width . 160) '(height . 50))
+;;(add-hook 'window-setup-hook #'toggle-frame-maximized)
+;;(add-hook 'window-setup-hook #'toggle-frame-fullscreen)
+(when window-system (set-frame-size (selected-frame) 160 50))
 (display-time)
 (server-start)

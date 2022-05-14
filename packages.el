@@ -32,6 +32,8 @@
 (package! org-re-reveal-ref)
 (package! oer-reveal)
 (package! exec-path-from-shell)
+
+
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
 
@@ -40,6 +42,10 @@
 ;; https://github.com/raxod502/straight.el#the-recipe-format
 ;(package! another-package
 ;  :recipe (:host github :repo "username/repo"))
+
+(package! pyim-tsinghua-dict
+  :recipe (:host github :repo "redguardtoo/pyim-tsinghua-dict"))
+
 
 ;; If the package you are trying to install does not contain a PACKAGENAME.el
 ;; file, or is located in a subdirectory of the repo, you'll need to specify
