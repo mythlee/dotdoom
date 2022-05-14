@@ -71,6 +71,7 @@
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
+(global-visual-line-mode)
 
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
