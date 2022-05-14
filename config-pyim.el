@@ -1,6 +1,7 @@
 (require 'pyim)
 (require 'pyim-basedict)
-
+(require 'pyim-tsinghua-dict)
+(pyim-tsinghua-dict-enable)
 
 (use-package pyim
   :ensure nil
@@ -40,8 +41,11 @@
   ;; 手动安装 posframe 包。
 
   (require 'posframe)
-  (setq pyim-page-tooltip 'posframe)
-  ;;(setq pyim-page-tooltip 'popup)
+ (setq posframe-arghandler #'my-posframe-arghandler)
+(defun my-posframe-arghandler (buffer-or-name arg-name value)
+  (let ((info '(:internal-border-width 10 :background-color "#333333" :font "Adobe Heiti Std 14")))))
+(setq pyim-page-tooltip 'posframe)
+;;(setq pyim-page-tooltip 'popup)
 
 
 
@@ -55,20 +59,3 @@
 (define-key pyim-mode-map "." 'pyim-page-next-page)
 (define-key pyim-mode-map "," 'pyim-page-previous-page)
 
-;;(pyim-basedict-enable)
-;; (setq default-input-method "pyim")
-;; (pyim-isearch-mode 1)
-
-;; (setq-default pyim-english-input-switch-functions
-;;               '(pyim-probe-dynamic-english
-;;                 pyim-probe-isearch-mode
-;;                 pyim-probe-program-mode
-;;                 pyim-probe-org-structure-template))
-
-;; (setq-default pyim-punctuation-half-width-functions
-;;               '(pyim-probe-punctuation-line-beginning
-;;                 pyim-probe-punctuation-after-punctuation))
-
-;; :bind
-;; (("M-j" . pyim-convert-string-at-point) ;与 pyim-probe-dynamic-english 配合
-;;  ("C-;" . pyim-delete-word-from-personal-buffer)))
