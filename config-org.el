@@ -41,10 +41,12 @@
                   ("\\subsubsection{%s}" . "\\subsubsection*{%s}"))))
 
 ;;(setq org-latex-listings t)
-
+(setq org-support-shift-select t)
 (add-to-list 'org-latex-packages-alist '("" "minted"))
 (setq org-latex-listings 'minted)
 
+(add-hook! org-mode
+           (auto-fill-mode 1))
 (setq org-src-fontify-natively t)
 ;;(org-babel-do-load-languages
 ;; 'org-babel-load-languages
