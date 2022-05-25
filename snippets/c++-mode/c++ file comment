@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: c++ file comment
+# key: cc
+# --
+// This file is part of ${1: Project}
+//
+// Copyright (C) 2021 Hui Li <huilee@mail.ustc.edu.cn>
+//
+// `(current-time-string)`
+
+$0
