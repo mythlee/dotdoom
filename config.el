@@ -92,6 +92,7 @@
 ;;(add-load-path! "~/.doom.d")
 
 (load! "./config-pyim")
+;;(load! "./config-rime")
 
 (load! "./config-tex")
 
@@ -108,5 +109,10 @@
 ;;(add-hook 'window-setup-hook #'toggle-frame-maximized)
 ;;(add-hook 'window-setup-hook #'toggle-frame-fullscreen)
 (when window-system (set-frame-size (selected-frame) 160 50))
+
+(setq doom-font (font-spec :family "Menlo" :size 14 :weight 'semi-light)
+      doom-unicode-font (font-spec :family "monospace"))
+;;(setq doom-font (font-spec :family " :size 14 :weight 'semi-light)
+;;      doom-unicode-font (font-spec :family "monospace"))
 (display-time)
 (server-start)

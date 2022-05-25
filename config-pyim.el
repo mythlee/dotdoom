@@ -41,9 +41,9 @@
   ;; 手动安装 posframe 包。
 
   (require 'posframe)
- (setq posframe-arghandler #'my-posframe-arghandler)
-(defun my-posframe-arghandler (buffer-or-name arg-name value)
-  (let ((info '(:internal-border-width 10 :background-color "#333333" :font "Adobe Heiti Std 14")))))
+;(setq posframe-arghandler #'my-posframe-arghandler)
+;(defun my-posframe-show (orig &rest args)
+;  (let ((info '(:internal-border-width 10 :background-color "#333333" :font "WenQuanYi Micro Hei")))))
 (setq pyim-page-tooltip 'posframe)
 ;;(setq pyim-page-tooltip 'popup)
 

@@ -33,6 +33,14 @@
 (package! oer-reveal)
 (package! exec-path-from-shell)
 
+(package! rime)
+
+;; (package! rime
+;;   :recipe (:host github
+;;            :repo "DogLooksGood/emacs-rime"
+;;            :files ("*.el" "Makefile" "lib.c")
+;;            )
+;; )
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
