@@ -95,6 +95,7 @@
 ;;(add-load-path! "~/.doom.d")
 
 (load! "./config-pyim")
+<<<<<<< HEAD
 ; ;;(load! "./config-rime")
 
 (load! "./config-edit")
@@ -114,7 +115,9 @@
 ;;(add-hook 'window-setup-hook #'toggle-frame-fullscreen)
 ;;(when window-system (set-frame-size (selected-frame) 160 50))
 
-(setq doom-font (font-spec :family "Menlo" :size 15 :weight 'medium)
+(when window-system (set-frame-size (selected-frame) 160 50))
+
+(setq doom-font (font-spec :family "Menlo" :size 14 :weight 'semi-light)
       doom-unicode-font (font-spec :family "monospace"))
 ;;(setq doom-font (font-spec :family " :size 14 :weight 'semi-light)
 ;;      doom-unicode-font (font-spec :family "monospace"))
