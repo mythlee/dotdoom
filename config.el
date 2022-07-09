@@ -9,6 +9,7 @@
 (setq user-full-name "Hui Li"
       user-mail-address "mythlee@ustc.edu.cn")
 
+(pushnew! initial-frame-alist '(width . 120) '(height . 40))
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
 ;;
@@ -25,8 +26,10 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-zenburn)
+;(setq doom-theme 'doom-zenburn)
 
+;;(setq doom-theme 'doom-one-light)
+(setq doom-theme 'doom-one)
 (add-to-list 'term-file-aliases
     '("tmux-256color" ."xterm-direct"))
 
@@ -92,7 +95,9 @@
 ;;(add-load-path! "~/.doom.d")
 
 (load! "./config-pyim")
-;;(load! "./config-rime")
+; ;;(load! "./config-rime")
+
+(load! "./config-edit")
 
 (load! "./config-tex")
 
@@ -105,12 +110,11 @@
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
-(pushnew! initial-frame-alist '(width . 160) '(height . 50))
 ;;(add-hook 'window-setup-hook #'toggle-frame-maximized)
 ;;(add-hook 'window-setup-hook #'toggle-frame-fullscreen)
-(when window-system (set-frame-size (selected-frame) 160 50))
+;;(when window-system (set-frame-size (selected-frame) 160 50))
 
-(setq doom-font (font-spec :family "Menlo" :size 14 :weight 'semi-light)
+(setq doom-font (font-spec :family "Menlo" :size 15 :weight 'medium)
       doom-unicode-font (font-spec :family "monospace"))
 ;;(setq doom-font (font-spec :family " :size 14 :weight 'semi-light)
 ;;      doom-unicode-font (font-spec :family "monospace"))
