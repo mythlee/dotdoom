@@ -27,12 +27,16 @@
 (package! ox-pandoc)
 (package! cnfonts)
 (package! org-ref)
+(package! citeproc-org)
 (package! org-re-reveal)
 (package! org-re-reveal-citeproc)
 (package! org-re-reveal-ref)
 (package! oer-reveal)
 (package! exec-path-from-shell)
-
+(package! ob-mermaid)
+(package! tmux-pane)
+(package! evil-pinyin)
+(package! sis)
 (package! rime)
 
 ;; (package! rime

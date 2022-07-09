@@ -6,6 +6,11 @@
 
 (require 'ox-pandoc)
 (require 'ox-latex)
+(require 'org-ref)
+
+(use-package zotxt
+  :ensure t
+  )
 
 ;; (set-face-attribute
 ;;  'default nil
@@ -58,6 +63,7 @@
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((C++ . t)
+   (mermaid . t)
    (R . t)
    (Python . t)))
 
@@ -76,4 +82,8 @@ unwanted space when exporting org-mode to html."
     (ad-set-arg 1 fixed-contents)
     ))
 (setq org-latex-pdf-process
-      '("xelatex -shell-escape -interaction nonstopmode --output-directory %o %f"))
+      '("latexmk -pdfxe -latexoption=--shell-escape -outdir=%o %f")
+      ;'("xelatex -shell-escape -interaction nonstopmode --output-directory %o %f")
+      )
+
+(setq org-highlight-latex-and-related '(latex script entities))
