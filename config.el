@@ -29,7 +29,7 @@
 ;(setq doom-theme 'doom-zenburn)
 
 ;;(setq doom-theme 'doom-one-light)
-(setq doom-theme 'doom-one)
+(setq doom-theme 'doom-Iosvkem)
 (add-to-list 'term-file-aliases
     '("tmux-256color" ."xterm-direct"))
 
@@ -49,7 +49,8 @@
 ;;
 
 (define-key evil-normal-state-map "Q" 'fill-paragraph)
-
+(define-key evil-insert-state-map "\C-x\C-s" 'save-buffer)
+(define-key evil-insert-state-map "\C-x\C-f" 'find-file)
 
 
 ;; If you use `org' and don't want your org files in the default location below,
@@ -98,8 +99,7 @@
 
 (load! "./config-pyim")
 ; ;;(load! "./config-rime")
-
-(load! "./config-edit")
+;;(load! "./config-edit")
 
 (load! "./config-tex")
 
@@ -122,3 +122,5 @@
 ;;      doom-unicode-font (font-spec :family "monospace"))
 (display-time)
 (server-start)
+
+(ispell-change-dictionary "american" t)
